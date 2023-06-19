@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* すべてのWebページに適用される */
+
+body{
+	background-color:#ffe4c4;
+}
+
+.h1{
+	color:#c71585;
+	text-align:center;
+}
+
+
+.oza1{
+	color:#800000;
+	font-size:40px;
+	text-align:center;
+}
+
+
+img{
+	width:30%;
+	height:auto;
+}
+
+.oza-img{
+	text-align:center;
+}
