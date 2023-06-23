@@ -1,0 +1,44 @@
+/*htmlタグで横幅調節*/
+
+html{
+	margin-top: 50px;
+	margin-left: 40px;
+    margin-right: 560px;
+}
+
+/*list調節*/
+
+ul.cp_list {
+	position: relative;
+	padding: 0 0.5em;
+	margin-top: 2em;
+	list-style-type: none;
+	border: solid 2px #29B6F6;
+}
+ul.cp_list::after {
+	position: absolute;
+	content: "班員紹介";
+	padding: 1px 7px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	font-size: .8em;
+	background: #29B6F6;
+	color: #fff;
+	bottom: 100%;
+	left: -2px;
+	border-radius: 4px 4px 0px 0px;
+}
+ul.cp_list li {
+	line-height: 1.5;
+	padding: 0.5em 0 0.5em 1.4em;
+	border-bottom: 1px dashed #81D4FA;
+}
+ul.cp_list li::before {
+	position: absolute;
+    color: #FF5722;
+	font-weight: bold;
+	left : 0.5em;
+}
+ul.cp_list li:last-of-type {
+	border-bottom: none;
+}
