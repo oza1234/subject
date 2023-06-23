@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<link rel = "stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>班員紹介t</title>
+	<script>
+		var count = 0;
+  
+		function incrementCount() {
+		  count++;
+		  document.getElementById('counter').textContent = count;
+		}
+	  </script>
 </head>
 <body>
+	<h1>班員紹介ページ</h1>
     <header class="header">
 			<nav class="nav">
-				<ul>
-					<li><a href="index.html">ホーム</a></li>
+				<ul class="cp_list">
 					<li><a href="">宮崎</a></li>
 					<li><a href="">山田</a></li>
 					<li><a href="">尾崎</a></li>
@@ -17,6 +26,9 @@
                     <li><a href="">武田</a></li>
 				</ul>
 			</nav>
-	</header>
+	</header> 
+    <button onclick="incrementCount()">ボタンをクリック</button>
+    <p>クリックされた回数: <span id="counter">0</span></p>   
+    </main>
 </body>
 </html>
