@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>前田君紹介ページ</title>
+<link rel="stylesheet" href="css/maeda.css">
+</head>
+<body>
+<div>
+		<header>
+
+				<h1><a>前田の紹介ページ（作成者：武田）</a></h1>
+
+
+		</header>
+
+		
+		<button>表示/非表示</button>
+		<article>
+			<div id="box"><img src="kame.jpg"></div>
+		</article>
+
+		<script>
+			let switchBtn = document.getElementsByTagName('button')[0];
+			let box = document.getElementById('box');
+
+			let changeElement = (el)=> {
+
+				if(el.style.display==''){
+					el.style.display='none';
+				}else{
+					el.style.display='';
+				}
+
+			}
+
+			switchBtn.addEventListener('click', ()=> {
+				changeElement(box);
+			}, false);
+		</script>
+
+		
+		
+		<main　class="">
+			<div class="pro">
+			<p>年齢：20</p>
+			<p>趣味：読書</p>
+			<p>得意教科：プログラミング</p>
+			<p>好きな食べ物：卵料理</p>
+			<p>就職活動の方針：情報収集を怠らない</p>
+			</div>
+		</main>
+		<footer>
+			<nav class="men">
+				<h2 >その他班員一覧</h2>
+				<li><a href="ozaku.html"></a>尾崎</li>
+				<li><a href="takeda.html"></a>武田</li>
+				<li><a href="miyazaki.html"></a>宮崎</li>
+				<li><a href="yamada.html"></a>山田</li>
+			<p ><a href="index.html">ページTOPへ戻る</a></p>
+		</nav>
+		</footer>
+</div>
+</body>
+</html>
