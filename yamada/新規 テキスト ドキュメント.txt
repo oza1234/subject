@@ -1,0 +1,26 @@
+// $(function () { 
+//     $('button').on("click", () => {
+//       console.log("1");
+//       $('img').hide();
+//     });
+
+//     // $('button').on("click", () => {
+//     //   console.log("2");
+//     //   $('.photo').show();
+//     // });
+//   });
+let cnt = 0;
+$(function(){
+    
+    $('.toggle-button').on("click",() => {
+      if(cnt % 2 == 0){
+        console.log("1");
+        $('.photo').hide();
+        cnt++;
+      }else if(cnt % 2 == 1){
+        console.log("2");
+        $('.photo').show();
+        cnt++;
+      }
+    });
+  });
