@@ -12,6 +12,17 @@
 		  count++;
 		  document.getElementById('counter').textContent = count;
 		}
+		function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+
+      var timeString = hours + ':' + minutes + ':' + seconds;
+
+      document.getElementById('clock').textContent = timeString;
+    }
+	setInterval(updateClock, 1000);
 	  </script>
 </head>
 <body>
@@ -28,7 +39,9 @@
 			</nav>
 	</header> 
     <button onclick="incrementCount()">ボタンをクリック</button>
-    <p>クリックされた回数: <span id="counter">0</span></p>   
+    <p>クリックされた回数: <span id="counter">0</span></p> 
+	<h1>現在時刻:</h1>
+  <div id="clock"></div>  
     </main>
 </body>
 </html>
