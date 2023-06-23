@@ -42,3 +42,35 @@ ul.cp_list li::before {
 ul.cp_list li:last-of-type {
 	border-bottom: none;
 }
+
+/*背景色切り替えボタン*/
+#change {
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #000000;
+  display: none;
+}
+
+#change button{
+  width: 10px;
+  height: 15px;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+.changeW {
+  background-color: #FFFFFF;
+}
+
+.changeY {
+  background-color: #FFF67F;
+}
+
+.changeG {
+  background-color: #98fb98;
+}
+
+.changeB {
+  background-color: #87CEED;
+}

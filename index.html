@@ -23,11 +23,34 @@
       document.getElementById("result").textContent = list[random];
     }
   }
-		
-		
-		
-	  </script>
-	  
+  
+  let situation = false;
+  function change() {
+    if(situation == false) {
+      document.getElementById('change').style.display = "block";
+      situation = true;
+    }else {
+      document.getElementById('change').style.display = "none";
+      situation = false;
+    }
+ }
+  function changeW() {
+    document.bgColor = "#FFFFFF";
+  }
+
+  function changeY() {
+    document.bgColor = "#FFF67F";
+  }
+
+  function changeG() {
+    document.bgColor = "#98fb98";
+  }
+
+  function changeB() {
+    document.bgColor = "#87CEED";
+  }
+
+</script>
 </head>
 <body>
 	<h1>班員紹介ページ</h1>
@@ -57,6 +80,14 @@
     <p id="result"></p>
   </div>
   
+  
+    <button type="button" onclick="change()">背景色変更</button>
+    <div id='change'>
+      <button class="changeW"type="button" onclick="changeW()"></button>
+      <button class="changeY" type="button" onclick="changeY()"></button>
+      <button class="changeG" type="button" onclick="changeG()"></button>
+      <button class="changeB" type="button" onclick="changeB()"></button>
+    </div>
   
 </body>
 </html>
