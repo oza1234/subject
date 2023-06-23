@@ -8,15 +8,89 @@
  <meta name=”robots” content=”noindex,nofollow“>
 
  <title>尾崎理芳さんの自己紹介</title>
- <link rel = "stylesheet" href = "oza.css">
+ <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+ <link rel = "stylesheet" href = "css/oza.css">
+
+ 
 </head>
 <body>
 
-　<h1 class="h1">尾崎さんの紹介ページ(作成者:山田隼輔)</h1>
-  <p class="oza1">名前:尾崎理芳<p>
-  <div class="oza-img">
-  	<img src="oza.png">
+  <script>
+
+    function hyoji(num)
+    {
+		if(num == 0)
+    	{
+    		document.getElementById("disp").style.display="block";
+    	}
+    	else
+    	{
+    		document.getElementById("disp").style.display="none";
+    	}
+    }
+ </script>
+
+<header>
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+                    <ul>
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="../takeda/takeda.html">TAKEDA</a>
+                </li>
+                <li>
+                    <a href="#">MIYAZAKI</a>
+                </li>
+                <li>
+                    <a href="#">YAMADA</a>
+                </li>
+                <li>
+                    <a href="#">MAEDA</a>
+                </li>
+            </ul>
+        </div>
+        <!--ここまでメニュー-->
+    	</div>
+    </div>
+</header>
+
+
+
+
+  <h1 class="h1">尾崎さんの紹介ページ(作成者:山田隼輔)</h1>
+  <div class="oza1">
+  <ul>
+   <li>名前:尾崎理芳</li>
+   <li>趣味:クソゲーをすること</li>
+ </ul>
  </div>
- <p class="oza1">趣味:クソゲーをすること<p>
+ 
+ 
+ <h1 class ="h1">班員からのコメント</h1>
+   <div class="oza1">
+  <ul>
+   <li>宮崎:素晴らしい!</li>
+   <li>山田:まじかわいい</li>
+   <li>武田:まじかっこいい</li>
+   <li>前田:最高</li>
+ </ul>
+ </div>
+ 
+ 
+ 
+ 
+ 
+   <input type="button" onclick="hyoji(0)" value="表示">
+   <input type="button" onclick="hyoji(1)" value="非表示">
+       <br><br>
+  <div id = "disp">
+    <img src="css/oza.png">
+ </div>
+
+ 
 </body>
 </html>

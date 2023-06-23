@@ -12,7 +12,22 @@
 		  count++;
 		  document.getElementById('counter').textContent = count;
 		}
+		
+		
+		
+    window.onload = function () {
+    const list = ["大吉","吉","中吉","小吉","末吉","凶","大凶"];
+
+    document.getElementById("button").onclick = function () {
+      var random = Math.floor(Math.random() * list.length);
+      document.getElementById("result").textContent = list[random];
+    }
+  }
+		
+		
+		
 	  </script>
+	  
 </head>
 <body>
 	<h1>班員紹介ページ</h1>
@@ -21,7 +36,7 @@
 				<ul class="cp_list">
 					<li><a href="">宮崎</a></li>
 					<li><a href="">山田</a></li>
-					<li><a href="">尾崎</a></li>
+					<li><a href="ozaki/oza.html">尾崎</a></li>
 					<li><a href="">前田</a></li>
                     <li><a href="takeda/takeda.html">武田</a></li>
 				</ul>
@@ -30,5 +45,18 @@
     <button onclick="incrementCount()">ボタンをクリック</button>
     <p>クリックされた回数: <span id="counter">0</span></p>   
     </main>
+    
+    
+    
+    
+  <div class="wrapper">
+    <p>おみくじ<br>ボタンをクリックしてください。</p>
+    <div class="wrapper-button">
+      <button id="button" class="button">おみくじを引く</button>
+    </div>
+    <p id="result"></p>
+  </div>
+  
+  
 </body>
 </html>
