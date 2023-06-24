@@ -50,13 +50,22 @@ setInterval('showClock1()',1000);
 					<li><a href="">宮崎</a></li>
 					<li><a href="yamada/yamada.html">山田</a></li>
 					<li><a href="ozaki/oza.html">尾崎</a></li>
-					<li><a href="">前田</a></li>
+					<li><a href="maeda/maeda.html">前田</a></li>
                     <li><a href="takeda/takeda.html">武田</a></li>
 				</ul>
 			</nav>
 	</header> 
-    <button onclick="incrementCount()">ボタンをクリック</button>
-    <p>クリックされた回数: <span id="counter">0</span></p>   
+
+  <button onclick="func1()">リロード</button>
+
+  <script>
+    function func1() {
+      document.location.reload();
+    }
+  </script>
+
+<button onclick="incrementCount()">ボタンをクリック</button>
+<p>クリックされた回数: <span id="counter">0</span></p> 
     </main>
     
     

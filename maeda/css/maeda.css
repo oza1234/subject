@@ -33,12 +33,10 @@ h1{
 	text-align: center;
 }
 
-button{
-	text-align: center;
-}
 
 article{
 	text-align: center;
+	float: inline-end;
 }
 
 
