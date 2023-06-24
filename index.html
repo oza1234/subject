@@ -23,9 +23,33 @@
       document.getElementById("result").textContent = list[random];
     }
   }
-		
-		
-		
+  
+  let situation = false;
+  function change() {
+    if(situation == false) {
+      document.getElementById('change').style.display = "block";
+      situation = true;
+    }else {
+      document.getElementById('change').style.display = "none";
+      situation = false;
+    }
+ }
+  function changeW() {
+    document.bgColor = "#FFFFFF";
+  }
+
+  function changeY() {
+    document.bgColor = "#FFF67F";
+  }
+
+  function changeG() {
+    document.bgColor = "#98fb98";
+  }
+
+  function changeB() {
+    document.bgColor = "#87CEED";
+  }
+
 		
    function showClock1() {
    var nowTime = new Date();
@@ -34,20 +58,16 @@
    var nowSec  = nowTime.getSeconds();
    var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
    document.getElementById("RealtimeClockArea").innerHTML = msg;
-}
-setInterval('showClock1()',1000);
-		
-		
-		
-	  </script>
-	  
+  }
+  setInterval('showClock1()',1000);
+  </script>  
 </head>
 <body>
 	<h1>班員紹介ページ</h1>
     <header class="header">
 			<nav class="nav">
 				<ul class="cp_list">
-					<li><a href="">宮崎</a></li>
+					<li><a href="miyazaki/miyazaki.html">宮崎</a></li>
 					<li><a href="yamada/yamada.html">山田</a></li>
 					<li><a href="ozaki/oza.html">尾崎</a></li>
 					<li><a href="maeda/maeda.html">前田</a></li>
@@ -79,6 +99,14 @@ setInterval('showClock1()',1000);
     <p id="result"></p>
   </div>
   
+  
+    <button type="button" onclick="change()">背景色変更</button>
+    <div id='change'>
+      <button class="changeW"type="button" onclick="changeW()"></button>
+      <button class="changeY" type="button" onclick="changeY()"></button>
+      <button class="changeG" type="button" onclick="changeG()"></button>
+      <button class="changeB" type="button" onclick="changeB()"></button>
+    </div>
   
 </body>
 </html>

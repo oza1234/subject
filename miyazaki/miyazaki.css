@@ -1,0 +1,78 @@
+html {
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 800px;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 2px solid #000000;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.nav ul{
+  margin: 0 0 0 0;
+  padding: 0 auto 15px auto;
+  background-repeat: repeat-x;
+}
+
+.nav li{
+  display: inline;
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+/*main*/
+.plof {
+  display: flex;
+}
+
+.prof-item {
+  width: 450px;
+}
+
+.prof-item {
+  font-size: 20px;
+}
+
+.prof-img {
+  display: block;
+  width: 350px;
+}
+
+.prof-img img {
+  width: 300px;
+  height: 350px;
+  margin-left: 30px; 
+}
+
+.prof-img button {
+  margin: 5px 140px;
+}
+
+.comment {
+  margin-bottom: 50px;
+  border: 2px solid #0000ff;
+  border-radius: 25px;
+}
+
+.comment p{
+  margin: 0 10px 3px 10px;
+}
+
+.comment-name {
+  margin: 0 ;
+  padding-top: 5px;
+}
+
+.comment-text {
+  border-bottom: 1px solid #000000;
+}
